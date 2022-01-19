@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munseok portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </head>
+  <body>
+    <section class="section home">
+      <navbar class="navbar">
+        <div>
+          <img src="./images/img/profil_logo.png" alt="logo" class="logo" />
+        </div>
+        <ul class="list">
+          <li class="item" data-type=".home">Home</li>
+          <li class="item" data-type=".about">About</li>
+          <li class="item" data-type=".skills">Skills</li>
+          <li class="item" data-type=".source">Source</li>
+          <li class="item" data-type=".work">Work</li>
+          <li class="item" data-type=".contact">Contact</li>
+        </ul>
+      </navbar>
+      <div class="home__container max">
+        <div class="home__description">
+          <p>안녕하세요 :)<br />개발이 취미인</p>
+          <p class="bol__text">프론트엔드 개발자</p>
+          <p><strong class="bol__text">오문석</strong>입니다.</p>
+          <p class="short__desc">
+            솔루션&#183;SI회사 웹퍼블리셔 1년 경력을 쌓았습니다.<br />
+            프론트 개발자가 되기위해 바닐라 자바스크립트, React, Redux, Context
+            API를 공부하며 서비스 개발 및 상태 관리 경험을 쌓고 있습니다
+            <br />
+            또한, Webpack, Babel 등 프론트 개발에 필요한 지식을 꾸준히
+            쌓고있습니다.
+          </p>
+        </div>
+        <div class="home__avatar">
+          <div class="avatar__box">
+            <img
+              class="avartar"
+              src="./images/img/profile_avatar.jpg"
+              alt="avartar"
+            />
+          </div>
+          <div class="patterns"></div>
+          <div class="round"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section about">
+      <h2 class="section__title">ABOUT ME</h2>
+      <div class="max">
+        <ul class="about__list first">
+          <li>
+            <p class="list__name">NAME</p>
+            <span>오문석 (Oh Mun Seok)</span>
+          </li>
+          <li>
+            <p class="list__name">E-MAIL</p>
+            <span>journy002@naver.com</span>
+          </li>
+          <li>
+            <p class="list__name">PHONE</p>
+            <span>010-4993-1251</span>
+          </li>
+        </ul>
+        <ul class="about__list second">
+          <li>
+            <p class="list__name">ADDRESS</p>
+            <span>경기도 의왕시 내손동</span>
+          </li>
+          <li>
+            <p class="list__name">EDUCATION</p>
+            <span>북경 어언 대학교(4년제)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section skills">
+      <h2 class="section__title">SKILLS</h2>
+      <div class="skill__container max">
+        <p class="skill__description">
+          다양한 프로젝트를 통하여 HTML5, CSS3, Javscript, React, Git 등 다양한
+          tool과 라이브러리 사용 경험을 쌓았습니다.<br />
+          더욱 발전된 프론트앤드 개발자가 되기 위해 코드의 확장성, 리팩토링에
+          신경쓰며 개발 공부를 하고 있습니다.
+        </p>
+        <img
+          class="skill__list"
+          src="./images/img/skills_list.png"
+          alt="skills_list"
+        />
+      </div>
+    </section>
+    <section class="section source">
+      <h2 class="section__title">SOURCE</h2>
+      <div class="source__container max">
+        <a
+          class="source__img_box"
+          href="https://github.com/journy002"
+          target="_blank"
+        >
+          <img
+            class="source__img"
+            src="./images/img/git_log.png"
+            alt="gitImage"
+          />
+        </a>
+        <ul class="source__description">
+          <li>
+            프론트개발 관련 지식을 공부하고 Git을 이용하여 공부한 기록들을
+            담고있습니다.
+          </li>
+          <li>
+            안주하지 않고 더 나은 프론트개발자가 되기 위해 노력하며 그 기록들을
+            담겠습니다.
+          </li>
+          <li>왼쪽 이미지를 클릭하시면 Github 사이트를 보실 수 있습니다.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section work">
+      <h2 class="section__title">WORK</h2>
+      <div class="work__container max">
+        <div class="work__box">
+          <div class="slider">
+            <div>
+              <img
+                src="./images/img/work/card-maker-login.png"
+                alt="login-page"
+              />
+            </div>
+            <div>
+              <img
+                src="./images/img/work/card-maker-main.png"
+                alt="main-page"
+              />
+            </div>
+          </div>
+          <ul class="work__description">
+            <li>실시간 명함 제작 서비스 페이지를 만들어 보았습니다.</li>
+            <li>기술 스택: React, React-router, HTML5, POSTCSS</li>
+            <li>
+              프로젝트를 통해 form, input에서 발생하는 이벤트를 컨트롤하는
+              방법을 공부했으며, Card Edit에 적용되는 img를 컴포넌트에 전달하는
+              방법을 공부했습니다.
+            </li>
+            <li>RouterV6 최신버전을 이용하여 Router 사용법을 공부했습니다.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section contact"></section>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".slider").bxSlider();
+    });
+  </script>
+</html>

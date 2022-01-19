@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SCDream";
+  src: local("SCDream");
+  src: url("../fonts/SCDream2.otf"),
+    url("../fonts/SCDream2.otf?#iefix") format("embedded-opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SCDream5";
+  src: local("SCDream5");
+  src: url("../fonts/SCDream5.otf"),
+    url("../fonts/SCDream5.otf?#iefix") format("embedded-opentype");
+  font-style: normal;
+  font-weight: 500;
+}
