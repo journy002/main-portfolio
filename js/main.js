@@ -1,5 +1,3 @@
-import "../scss/style.scss";
-
 const nav = document.querySelector(".navbar");
 
 nav.addEventListener("click", (event) => {
