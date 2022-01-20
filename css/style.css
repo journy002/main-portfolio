@@ -293,14 +293,6 @@
   height: 19em;
 }
 
-.archive .bx-wrapper .bx-viewport {
-  height: 292px;
-}
-
-.archive .bx-wrapper .bx-viewport .slider div img {
-  height: 292px;
-}
-
 .archive .bx-wrapper .bx-controls-direction a.bx-prev {
   left: -45px;
 }
