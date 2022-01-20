@@ -33,7 +33,7 @@
           <li class="item" data-type=".about">About</li>
           <li class="item" data-type=".skills">Skills</li>
           <li class="item" data-type=".source">Source</li>
-          <li class="item" data-type=".archive">Archive</li>
+          <li class="item" data-type=".personal">Personal</li>
           <li class="item" data-type=".work">Work</li>
         </ul>
       </navbar>
@@ -109,6 +109,85 @@
         />
       </div>
     </section>
+    <section class="section work">
+      <h2 class="section__title">WORK</h2>
+      <div class="work__container">
+        <span class="content__item">portfolio 01</span>
+        <span class="content__item">portfolio 02</span>
+        <span class="content__item">portfolio 03</span>
+        <span class="content__item">portfolio 05</span>
+      </div>
+    </section>
+    <section class="section personal">
+      <h2 class="section__title">PERSONAL PROJECT</h2>
+      <div class="personal__container max">
+        <div class="personal__box">
+          <div class="slider">
+            <div>
+              <img
+                src="./gif/make-card-login.gif"
+                alt="card-make-login"
+                data-static="./gif/make-card-login.gif"
+                class="hov-anim"
+              />
+            </div>
+            <div>
+              <img
+                src="./gif/make-card-main.gif"
+                alt="card-make-login"
+                data-static="./gif/make-card-login.gif"
+                class="hov-anim"
+              />
+            </div>
+          </div>
+          <ul class="personal__description">
+            <li>실시간 명함 제작 서비스 페이지를 만들어 보았습니다.</li>
+            <li>
+              기술 스택: React, React-router, HTML5, POSTCSS, Javascript(ES6)
+            </li>
+            <li>
+              프로젝트를 통해 form, input에서 발생하는 이벤트를 컨트롤하는
+              방법을 공부했으며, Card Edit에 적용되는 img를 컴포넌트에 전달하는
+              방법을 공부했습니다.
+            </li>
+            <li>RouterV6 최신버전을 이용하여 Router 사용법을 공부했습니다.</li>
+          </ul>
+        </div>
+        <div class="personal__box">
+          <div class="slider">
+            <div>
+              <img
+                src="./gif/momentum-1.gif"
+                alt="card-make-login"
+                data-static="./video/make-card-login.gif"
+                class="hov-anim"
+              />
+            </div>
+            <div>
+              <img
+                src="./gif/momentum-2.gif"
+                alt="card-make-login"
+                data-static="./video/make-card-login.gif"
+                class="hov-anim"
+              />
+            </div>
+          </div>
+          <ul class="personal__description">
+            <li>
+              LocalStorage에 Data저장 및 날씨 API를 이용한 Momentum을 만들어
+              보았습니다.
+            </li>
+            <li>기술 스택: HTML5, CSS3, Javascript(ES6)</li>
+            <li>
+              프로젝트를 통해 data를 LocalStorage에 저장하고 필요한 데이터를
+              가져와 사용하는 방법을 배웠습니다. 순수 자바스크립트를 통해 적절한
+              DOM요소를 이용하여 todo-list를 만들며 원하는데 데이터를 삭제하는
+              방법을 배웠습니다.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="section source">
       <h2 class="section__title">SOURCE</h2>
       <div class="source__container max">
@@ -136,83 +215,11 @@
         </ul>
       </div>
     </section>
-    <section class="section archive">
-      <h2 class="section__title">ARCHIVE</h2>
-      <div class="archive__container max">
-        <div class="archive__box">
-          <div class="slider">
-            <div>
-              <img
-                src="./gif/make-card-login.gif"
-                alt="card-make-login"
-                data-static="./gif/make-card-login.gif"
-                class="hov-anim"
-              />
-            </div>
-            <div>
-              <img
-                src="./gif/make-card-main.gif"
-                alt="card-make-login"
-                data-static="./gif/make-card-login.gif"
-                class="hov-anim"
-              />
-            </div>
-          </div>
-          <ul class="archive__description">
-            <li>실시간 명함 제작 서비스 페이지를 만들어 보았습니다.</li>
-            <li>
-              기술 스택: React, React-router, HTML5, POSTCSS, Javascript(ES6)
-            </li>
-            <li>
-              프로젝트를 통해 form, input에서 발생하는 이벤트를 컨트롤하는
-              방법을 공부했으며, Card Edit에 적용되는 img를 컴포넌트에 전달하는
-              방법을 공부했습니다.
-            </li>
-            <li>RouterV6 최신버전을 이용하여 Router 사용법을 공부했습니다.</li>
-          </ul>
-        </div>
-        <div class="archive__box">
-          <div class="slider">
-            <div>
-              <img
-                src="./gif/momentum-1.gif"
-                alt="card-make-login"
-                data-static="./video/make-card-login.gif"
-                class="hov-anim"
-              />
-            </div>
-            <div>
-              <img
-                src="./gif/momentum-2.gif"
-                alt="card-make-login"
-                data-static="./video/make-card-login.gif"
-                class="hov-anim"
-              />
-            </div>
-          </div>
-          <ul class="archive__description">
-            <li>
-              LocalStorage에 Data저장 및 날씨 API를 이용한 Momentum을 만들어
-              보았습니다.
-            </li>
-            <li>기술 스택: HTML5, CSS3, Javascript(ES6)</li>
-            <li>
-              프로젝트를 통해 data를 LocalStorage에 저장하고 필요한 데이터를
-              가져와 사용하는 방법을 배웠습니다. 순수 자바스크립트를 통해 적절한
-              DOM요소를 이용하여 todo-list를 만들며 원하는데 데이터를 삭제하는
-              방법을 배웠습니다.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="section work">
-      <h2 class="section__title">WORK</h2>
-      <div class="work__content">
-        <span class="content__item">portfolio 01</span>
-        <span class="content__item">portfolio 02</span>
-        <span class="content__item">portfolio 03</span>
-        <span class="content__item">portfolio 05</span>
+    <section class="section contect">
+      <p>OH MUN SEOK PROTFOLIO</p>
+      <div class="contect__box">
+        <span>010-4993-1251</span>
+        <span>journy002@naver.com</span>
       </div>
     </section>
   </body>
