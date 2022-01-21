@@ -32,25 +32,12 @@
           <li class="item" data-type=".home">Home</li>
           <li class="item" data-type=".about">About</li>
           <li class="item" data-type=".skills">Skills</li>
-          <li class="item" data-type=".source">Source</li>
-          <li class="item" data-type=".personal">Personal</li>
           <li class="item" data-type=".work">Work</li>
+          <li class="item" data-type=".personal">Personal</li>
+          <li class="item" data-type=".source">Source</li>
         </ul>
       </navbar>
       <div class="home__container max">
-        <div class="home__description">
-          <p>안녕하세요 :)<br />개발이 취미인</p>
-          <p class="bol__text">프론트엔드 개발자</p>
-          <p><strong class="bol__text">오문석</strong>입니다.</p>
-          <p class="short__desc">
-            솔루션&#183;SI회사 웹퍼블리셔 1년 경력을 쌓았습니다.<br />
-            프론트 개발자가 되기위해 바닐라 자바스크립트, React, Redux, Context
-            API를 공부하며 서비스 개발 및 상태 관리 경험을 쌓고 있습니다
-            <br />
-            또한, Webpack, Babel 등 프론트 개발에 필요한 지식을 꾸준히
-            쌓고있습니다.
-          </p>
-        </div>
         <div class="home__avatar">
           <div class="avatar__box">
             <img
@@ -61,6 +48,23 @@
           </div>
           <div class="patterns"></div>
           <div class="round"></div>
+        </div>
+        <div class="home__des">
+          <div class="des__top">
+            <p>안녕하세요 :)<br />개발이 취미인</p>
+            <p class="bol__text">웹퍼블리셔 오문석입니다.</p>
+          </div>
+          <div class="des__bottom">
+            <p>
+              솔루션&#183;SI회사 웹퍼블리셔 1년 경력을 쌓았습니다.<br />
+              프론트 개발자가 되기위해 바닐라 자바스크립트, React, Redux,
+              Context API를 공부하며 서비스 개발 및 상태 관리 경험을 쌓고
+              있습니다
+              <br />
+              또한, Webpack, Babel 등 프론트 개발에 필요한 지식을 꾸준히
+              쌓고있습니다.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -109,13 +113,85 @@
         />
       </div>
     </section>
+    <!-- Work -->
     <section class="section work">
-      <h2 class="section__title">WORK</h2>
-      <div class="work__container">
-        <span class="content__item">portfolio 01</span>
-        <span class="content__item">portfolio 02</span>
-        <span class="content__item">portfolio 03</span>
-        <span class="content__item">portfolio 05</span>
+      <h2 class="section__title">WROK</h2>
+      <div class="section__container">
+        <!-- 버튼 만들기 -->
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">3</span>
+          </button>
+          <button class="category__btn" data-filter="sk-mysuni">
+            SK-mySuni<span class="category__count">1</span>
+          </button>
+          <button class="category__btn" data-filter="SK-BROADBAND">
+            SK-BROADBAND<span class="category__count">1</span>
+          </button>
+          <button class="category__btn" data-filter="WOONGJIN">
+            WOONGJIN<span class="category__count">1</span>
+          </button>
+        </div>
+        <!-- 프로젝트 넣기(프로젝트를 하나씩 만들어갈때마다 추가하기) -->
+        <div class="work__projects">
+          <a
+            href="javascript:void(0);
+          "
+            class="project"
+            data-type="sk-mysuni"
+          >
+            <!-- 프로젝트 이미지 -->
+            <img
+              src="./images/work/mysuni.png"
+              alt="반응형 웹헤더"
+              class="project__img"
+            />
+            <!-- 프로젝트 설명 -->
+            <div class="project__description">
+              <h3>sk-mysuni</h3>
+              <span>REACT/HTML5/CSS/GIT</span>
+              <span>해당 사이트는 직원전용입니다.</span>
+            </div>
+          </a>
+          <a
+            href="https://bdirectshop.com/Main.do?_C_=39755571&ib_no=a13&utm_source=naver&utm_medium=brandsearch&utm_campaign=bds_w&utm_content=homelink
+          "
+            class="project"
+            target="blank"
+            data-type="SK-BROADBAND"
+          >
+            <!-- 프로젝트 이미지 -->
+            <img
+              src="./images/work/skbroadband.png"
+              alt="반응형 웹헤더"
+              class="project__img"
+            />
+            <!-- 프로젝트 설명 -->
+            <div class="project__description">
+              <h3>SK-BROADBAND</h3>
+              <span>HTML5/CSS/JS(ES6)/SVN</span>
+            </div>
+          </a>
+          <a
+            href="https://www.ddalgicong.com/
+          "
+            class="project"
+            target="blank"
+            data-type="WOONGJIN"
+          >
+            <!-- 프로젝트 이미지 -->
+            <img
+              src="./images/work/bookclub.jpeg"
+              alt="반응형 웹헤더"
+              class="project__img"
+            />
+            <!-- 프로젝트 설명 -->
+            <div class="project__description">
+              <h3>WOONGJIN - 북클럽</h3>
+              <span>React/HTML5/CSS/GIT/SVN</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <section class="section personal">
@@ -225,6 +301,9 @@
         <span>journy002@naver.com</span>
       </div>
     </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">H</button>
   </body>
   <script>
     $(document).ready(function () {
