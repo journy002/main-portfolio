@@ -444,6 +444,10 @@ a {
   background-color: var(--color-dark-white);
 }
 
+.project__description span {
+  color: var(--color-white);
+}
+
 .personal {
   font-family: "Noto Sans";
   background-color: var(--color-white-grey);
