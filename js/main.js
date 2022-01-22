@@ -25,7 +25,7 @@ navbarToggleBtn.addEventListener("click", () => {
 });
 
 // Handle scrolling when tapping on the navbar menu
-const navbarMenu = document.querySelector(".list");
+const navbarMenu = document.querySelector(".navbar__list");
 navbarMenu.addEventListener("click", (event) => {
   const target = event.target;
   const link = target.dataset.link;
@@ -33,8 +33,8 @@ navbarMenu.addEventListener("click", (event) => {
     return;
   }
   // remove('open')을 scrollIntoView()위에 써서 핸드폰 사이즈 메뉴바로 메뉴 선택시 선택 영역으로 스크롤링 되면서 메뉴는 사라지게 만든다.
-  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+  navbarMenu.classList.remove("open");
 });
 
 const homeContainer = document.querySelector(".home__container");
