@@ -18,6 +18,25 @@ document.addEventListener("scroll", () => {
   }
 });
 
+// Navbar toggle button for small screen 핸드폰 사이즈에서 메뉴버튼 눌렀을때 하단에 메뉴 리스트 나타내기
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
+// Handle scrolling when tapping on the navbar menu
+const navbarMenu = document.querySelector(".list");
+navbarMenu.addEventListener("click", (event) => {
+  const target = event.target;
+  const link = target.dataset.link;
+  if (link == null) {
+    return;
+  }
+  // remove('open')을 scrollIntoView()위에 써서 핸드폰 사이즈 메뉴바로 메뉴 선택시 선택 영역으로 스크롤링 되면서 메뉴는 사라지게 만든다.
+  navbarMenu.classList.remove("open");
+  scrollIntoView(link);
+});
+
 const homeContainer = document.querySelector(".home__container");
 const homeHeight = homeContainer.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
