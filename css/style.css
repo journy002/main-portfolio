@@ -332,10 +332,12 @@ a {
 }
 .category__btn {
   position: relative;
+  padding: 8px 48px;
+  font-size: var(--font-regular-size);
   border: 1px solid var(--color-white);
   border-radius: 15px;
-  font-size: var(--font-regular-size);
-  padding: 8px 48px;
+  color: var(--color-black);
+  background-color: var(--color-white-grey);
 }
 
 .category__btn.selected,
