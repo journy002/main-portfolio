@@ -99,7 +99,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 1.3emem;
+  padding: 1em 1.3em;
   width: 100%;
   z-index: 9999;
 }
