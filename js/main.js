@@ -37,15 +37,20 @@ navbarMenu.addEventListener("click", (event) => {
   navbarMenu.classList.remove("open");
 });
 
+const broWidth = window.innerWidth;
 const homeContainer = document.querySelector(".home__container");
 const homeHeight = homeContainer.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
-  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+  if (broWidth > 513) {
+    homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+  } else if (broWidth < 513) {
+    homeContainer.style.opacity = 1;
+  }
 });
 
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
-  if (window.scrollY > homeHeight / 5) {
+  if (window.scrollY > homeHeight / 2) {
     arrowUp.classList.add("visible");
   } else {
     arrowUp.classList.remove("visible");
