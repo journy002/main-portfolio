@@ -245,65 +245,41 @@ a {
   width: 100%;
 }
 
-.about .max .about__list li {
+.about .max .about__list .list {
   position: relative;
   width: calc(100% / 3);
   text-align: center;
 }
 
-.about .max .about__list li p {
+.about .max .about__list .list .list__name {
   margin-bottom: 0.6em;
+  font-weight: 700;
 }
-
-.about .max .about__list.first .list:nth-child(1) p:before {
-  position: absolute;
-  bottom: 50px;
-  display: inline-block;
+.about .max .about__list.first .list .list__name::before,
+.about .max .about__list.second .list .list__name::before {
   content: "";
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
   width: 56px;
   height: 56px;
   background: url("../images/img/profil-ico.png");
-  transform: translateX(-5px);
 }
-.about .max .about__list.first .list:nth-child(2) p:before {
-  position: absolute;
-  bottom: 50px;
-  display: inline-block;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background: url("../images/img/profil-ico.png") 0 25%;
-  transform: translateX(-2px);
+.about .max .about__list.first .list:nth-child(1) .list__name:before {
+  background-position: 0 0;
 }
-.about .max .about__list.first .list:nth-child(3) p:before {
-  position: absolute;
-  bottom: 50px;
-  display: inline-block;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background: url("../images/img/profil-ico.png") 0 75%;
+.about .max .about__list.first .list:nth-child(2) .list__name:before {
+  background-position: 0 calc(-56px * 2);
+}
+.about .max .about__list.first .list:nth-child(3) .list__name:before {
+  background-position: 0 calc(-56px * 3);
 }
 
-.about .max .about__list.second .list:first-child p:before {
-  position: absolute;
-  bottom: 50px;
-  display: inline-block;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background: url("../images/img/profil-ico.png") 0 50%;
-  transform: translateX(8px);
+.about .max .about__list.second .list:nth-child(1) .list__name:before {
+  background-position: 0 calc(-56px * 1);
 }
-.about .max .about__list.second .list:last-child p:before {
-  position: absolute;
-  bottom: 50px;
-  display: inline-block;
-  content: "";
-  width: 56px;
-  height: 56px;
-  background: url("../images/img/profil-ico.png") 0 100%;
-  transform: translateX(17px);
+.about .max .about__list.second .list:nth-child(2) .list__name:before {
+  background-position: 0 calc(-56px * 4);
 }
 
 /* Skill */
@@ -323,6 +299,10 @@ a {
 .skill__container .skill__description {
   margin-bottom: 2.5em;
   line-height: 2em;
+}
+
+.skill__container .skill__description .wbr {
+  display: block;
 }
 
 /* Work */
@@ -712,8 +692,18 @@ a {
     margin-bottom: 0;
   }
 
-  .about .max .about__list li {
-    margin-top: 5em;
+  .about .max .about__list:last-child {
+    margin-top: 0;
+  }
+
+  .about .max .about__list .list {
+    margin-top: 2em;
+    width: 15em;
+  }
+
+  .about .max .about__list.first .list + .list,
+  .about .max .about__list.second .list {
+    margin-top: 2em;
   }
 
   .about .max .about__list.first .list:nth-child(1) p:before {
@@ -728,22 +718,8 @@ a {
     bottom: 63px;
   }
 
-  .work__categories {
+  .skill__container .skill__description .wbr {
     display: inline-block;
-    text-align: center;
-  }
-
-  .category__btn {
-    width: 15em;
-  }
-
-  .category__btn + .category__btn {
-    margin-top: 0.3em;
-  }
-
-  .work__projects {
-    flex-direction: column;
-    align-items: center;
   }
 
   .category__btn {

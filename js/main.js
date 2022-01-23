@@ -45,7 +45,7 @@ document.addEventListener("scroll", () => {
 
 const arrowUp = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
-  if (window.scrollY > homeHeight / 2) {
+  if (window.scrollY > homeHeight / 5) {
     arrowUp.classList.add("visible");
   } else {
     arrowUp.classList.remove("visible");
