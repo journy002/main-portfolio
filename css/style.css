@@ -37,6 +37,7 @@
 }
 
 * {
+  font-family: NotoSansKR-Regular;
   box-sizing: border-box;
 }
 
@@ -177,7 +178,7 @@ a {
   justify-content: center;
   flex-direction: column;
   margin-left: 3em;
-  width: 30em;
+  width: 34em;
   line-height: 1.5;
   font-family: "SCDream";
   line-height: 1.4em;
